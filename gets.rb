@@ -12,5 +12,13 @@ loop do
     hh[id] = x      # set hash value
 
     puts hh.inspect
+
+    total = 0
+    hh.each do |k, v|
+        total = total + v
+    end
+
+    puts "Total items in cart: #{total}"
+
     puts "==================================="
 end
