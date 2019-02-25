@@ -16,13 +16,19 @@ function addToCart(id)
     window.localStorage.setItem(key, x);
 
     updateOrdersInput();
+    updateOrdersButton();
 }
-
 
 function updateOrdersInput()
 {
     var orders = cartGetOrders();
     $('#orders_input').val(orders);
+}
+
+function updateOrdersButton()
+{
+    var text = 'Cart (' + cartGetNumberOfItems() + ')';
+    $('#orders_button').val(text);
 }
 
 function cartGetNumberOfItems()
