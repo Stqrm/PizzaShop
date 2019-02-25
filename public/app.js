@@ -15,7 +15,14 @@ function addToCart(id)
     x = x * 1 + 1;
     window.localStorage.setItem(key, x);
 
-    alert('Items in your cart:' + cartGetNumberOfItems());
+    updateOrdersInput();
+}
+
+
+function updateOrdersInput()
+{
+    var orders = cartGetOrders();
+    $('#orders_input').val(orders);
 }
 
 function cartGetNumberOfItems()
@@ -35,6 +42,7 @@ function cartGetNumberOfItems()
 
     return cnt;
 }
+
 
 function cartGetOrders()
 {   
