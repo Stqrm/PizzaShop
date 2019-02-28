@@ -70,6 +70,10 @@ function cartGetOrders()
 
 function cancel_order() 
 {
-    alert('aaa');
+    window.localStorage.clear();
+
+    updateOrdersInput();
+    updateOrdersButton();
+
     return false;
 }
