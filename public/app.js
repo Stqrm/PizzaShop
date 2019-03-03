@@ -75,5 +75,7 @@ function cancel_order()
     updateOrdersInput();
     updateOrdersButton();
 
+    $('#cart').text('Your cart is now empty.'); // id="cart" in cart.erb
+
     return false;
 }
