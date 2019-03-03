@@ -1,4 +1,13 @@
 #orders_button {
-    background-color: yellow;
-    
+    background-color: #F8F8F8;  /* инструмент Colorzilla */
+    border: none;   /* нет границ */
+    font-size: 20px;
+    padding-top: 10px; /* отступ сверху */
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+
+    text-decoration: underline;
+
+
 }
